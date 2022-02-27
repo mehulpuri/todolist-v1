@@ -43,9 +43,10 @@ app.post("/", function(req,res){
   }
 });
 
-app.listen(3000, function(){
-  console.log("Started on 3000");
-})
+const PORT = process.env.PORT || '3000';
+app.listen(PORT, function(){
+  console.log("the server is up and running");
+});
 
 
 
